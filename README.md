@@ -1,2 +1,6 @@
-# TFG_Natalia
-Segmentación automática de tumores cerebrales en imágenes de resonancia magnética mediante aprendizaje profundo
+# Segmentación automática de tumores cerebrales en imágenes de resonancia magnética mediante aprendizaje profundo
+El avance de las técnicas de aprendizaje profundo ha impulsado el desarrollo de sistemas de diagnóstico asistido en el ámbito médico, especialmente en el análisis de imágenes por resonancia magnética (MRI). La detección y segmentación de tumores cerebrales constituye una tarea de gran relevancia clínica, ya que permite apoyar el trabajo de los especialistas, reducir el tiempo de diagnóstico y mejorar la planificación de tratamientos personalizados. Sin embargo, la naturaleza compleja de las imágenes médicas y la variabilidad entre pacientes hacen que este problema siga siendo un desafío.
+
+El presente Trabajo Fin de Grado se centra en la segmentación automática de tumores cerebrales en imágenes de resonancia magnética mediante modelos de redes neuronales. El objetivo principal es desarrollar, entrenar y comparar diferentes modelos de aprendizaje profundo capaces de generar segmentaciones binarias precisas a partir de secuencias de resonancia magnética multimodales.
+
+El estudio evalúa el impacto de las distintas secuencias de resonancia magnética y su contribución individual y combinada a la tarea de segmentación. Su propósito es identificar configuraciones de red y estrategias de entrenamiento para mejorar la precisión de la segmentación tumoral, contribuyendo al avance de las aplicaciones de aprendizaje profundo en el diagnóstico médico automatizado
