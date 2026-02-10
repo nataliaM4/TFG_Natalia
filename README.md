@@ -4,3 +4,5 @@ El avance de las técnicas de aprendizaje profundo ha impulsado el desarrollo de
 El presente Trabajo Fin de Grado se centra en la segmentación automática de tumores cerebrales en imágenes de resonancia magnética mediante modelos de redes neuronales. El objetivo principal es desarrollar, entrenar y comparar diferentes modelos de aprendizaje profundo capaces de generar segmentaciones binarias precisas a partir de secuencias de resonancia magnética multimodales.
 
 El estudio evalúa el impacto de las distintas secuencias de resonancia magnética y su contribución individual y combinada a la tarea de segmentación. Su propósito es identificar configuraciones de red y estrategias de entrenamiento para mejorar la precisión de la segmentación tumoral, contribuyendo al avance de las aplicaciones de aprendizaje profundo en el diagnóstico médico automatizado
+
+Enlace: https://colab.research.google.com/drive/1acPz7t69MZ3p5q7nPwupqCyjtGG7EWwe?usp=sharing
