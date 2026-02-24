@@ -5,4 +5,4 @@ El presente Trabajo Fin de Grado se centra en la segmentación automática de tu
 
 El estudio evalúa el impacto de las distintas secuencias de resonancia magnética y su contribución individual y combinada a la tarea de segmentación. Su propósito es identificar configuraciones de red y estrategias de entrenamiento para mejorar la precisión de la segmentación tumoral, contribuyendo al avance de las aplicaciones de aprendizaje profundo en el diagnóstico médico automatizado
 
-Enlace: https://colab.research.google.com/drive/1acPz7t69MZ3p5q7nPwupqCyjtGG7EWwe?usp=sharing
+[Enlace Colab](https://colab.research.google.com/drive/1A1buY2DEbv9p81yHdtWhVge-v4e4iuTU?usp=sharing)
