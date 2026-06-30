@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TFG Natalia</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <header>
+        <h1>Segmentación automática de tumores cerebrales en imágenes de resonancia magnética mediante aprendizaje profundo - Galería</h1>
+        <a class="back-link" href="/">Volver</a>
+    </header>
+
+    <h2 class="gallery-title">Casos de test disponibles</h2>
+
+    <div id="gallery-grid" class="gallery">
+        <!-- JavaScript añade aquí las 251 tarjetas -->
+    </div>
+
+    <script src="{{ url_for('static', filename='js/gallery.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TFG Natalia</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body data-case-id="{{ case_id }}">
+
+    <header>
+        <h1>Segmentación automática de tumores cerebrales en imágenes de resonancia magnética mediante aprendizaje profundo - Vista Previa</h1>
+        <a class="back-link" href="/gallery">Volver</a>
+    </header>
+
+    <div class="preview-container">
+        <h2>Caso {{ case_id + 1 }}</h2>
+
+        <div class="preview-grid">
+            <div>
+                <h3>FLAIR</h3>
+                <img id="prev-flair" alt="FLAIR">
+            </div>
+            <div>
+                <h3>T1</h3>
+                <img id="prev-t1" alt="T1">
+            </div>
+            <div>
+                <h3>T1ce</h3>
+                <img id="prev-t1ce" alt="T1ce">
+            </div>
+            <div>
+                <h3>T2</h3>
+                <img id="prev-t2" alt="T2">
+            </div>
+            <div>
+                <h3>Máscara real</h3>
+                <img id="prev-mask-real" alt="Máscara real">
+            </div>
+        </div>
+
+        <button id="btn-use" class="btn-use">Usar esta imagen</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/preview.js') }}"></script>
+</body>
+</html>

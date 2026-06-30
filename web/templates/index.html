@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TFG Natalia</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <!-- Marca de agua de fondo, se oculta al cargar un caso -->
+    <div id="bg-watermark" class="bg-watermark"></div>
+
+    <header>
+        <h1>Segmentación automática de tumores cerebrales en imágenes de resonancia magnética mediante aprendizaje profundo</h1>
+        <button id="menu-toggle" class="menu-btn" aria-label="Abrir menú">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <nav id="side-menu" class="side-menu">
+        <button id="menu-random" class="menu-item">Imagen aleatoria</button>
+        <button id="menu-gallery" class="menu-item">Ver imágenes</button>
+        <button id="menu-upload" class="menu-item">Elegir imagen</button>
+    </nav>
+
+    <main class="content">
+
+        <section class="panel">
+            <h2>Imágenes a usar</h2>
+            <div class="box" id="box-input">
+                <p class="placeholder-text" id="input-placeholder">
+                    Elige "Imagen aleatoria", "Ver imágenes" o "Elegir imagen" en el menú
+                </p>
+                <div class="thumb-grid" id="thumb-grid" style="display:none;">
+                    <div class="thumb">
+                        <img id="thumb-flair" alt="FLAIR">
+                        <span>FLAIR</span>
+                    </div>
+                    <div class="thumb">
+                        <img id="thumb-t1" alt="T1">
+                        <span>T1</span>
+                    </div>
+                    <div class="thumb">
+                        <img id="thumb-t1ce" alt="T1ce">
+                        <span>T1ce</span>
+                    </div>
+                    <div class="thumb">
+                        <img id="thumb-t2" alt="T2">
+                        <span>T2</span>
+                    </div>
+                </div>
+                <p id="case-label" class="case-label" style="display:none;"></p>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>Predicción Modelo</h2>
+            <div class="box" id="box-output">
+                <p class="placeholder-text" id="output-placeholder">
+                    Aquí aparecerá la máscara predicha
+                </p>
+                <img id="img-pred" class="pred-mask" alt="Máscara predicha" style="display:none;">
+                <div class="real-mask-corner" id="real-mask-corner" style="display:none;">
+                    <img id="img-mask-real" alt="Máscara real">
+                    <span>Máscara real</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="actions">
+        <button id="btn-generate" class="btn-generate">Generar predicción</button>
+        <p id="dice-result" class="dice-result"></p>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

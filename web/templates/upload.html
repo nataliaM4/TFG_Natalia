@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TFG Natalia</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <header>
+        <h1>Segmentación automática de tumores cerebrales en imágenes de resonancia magnética mediante aprendizaje profundo - Subir Imágenes</h1>
+        <a class="back-link" href="/">Volver</a>
+    </header>
+
+    <div class="upload-container">
+        <h2>Sube tus propias imágenes</h2>
+        <p class="upload-info">
+            Debes subir las 4 secuencias del mismo corte cerebral
+            (FLAIR, T1, T1ce y T2). Cada imagen tiene que medir
+            <b>exactamente 240 × 240 píxeles</b>, ya que es el tamaño
+            con el que se entrenó el modelo.
+        </p>
+
+        <div class="upload-grid">
+
+            <div class="upload-slot" id="slot-flair">
+                <span class="upload-slot-title">FLAIR</span>
+                <label class="upload-box" for="file-flair">
+                    <img class="upload-preview" id="preview-flair" alt="" style="display:none;">
+                    <span class="upload-placeholder">Haz clic para elegir la imagen</span>
+                </label>
+                <input type="file" id="file-flair" accept="image/*" hidden>
+                <p class="upload-error" id="error-flair"></p>
+            </div>
+
+            <div class="upload-slot" id="slot-t1">
+                <span class="upload-slot-title">T1</span>
+                <label class="upload-box" for="file-t1">
+                    <img class="upload-preview" id="preview-t1" alt="" style="display:none;">
+                    <span class="upload-placeholder">Haz clic para elegir la imagen</span>
+                </label>
+                <input type="file" id="file-t1" accept="image/*" hidden>
+                <p class="upload-error" id="error-t1"></p>
+            </div>
+
+            <div class="upload-slot" id="slot-t1ce">
+                <span class="upload-slot-title">T1ce</span>
+                <label class="upload-box" for="file-t1ce">
+                    <img class="upload-preview" id="preview-t1ce" alt="" style="display:none;">
+                    <span class="upload-placeholder">Haz clic para elegir la imagen</span>
+                </label>
+                <input type="file" id="file-t1ce" accept="image/*" hidden>
+                <p class="upload-error" id="error-t1ce"></p>
+            </div>
+
+            <div class="upload-slot" id="slot-t2">
+                <span class="upload-slot-title">T2</span>
+                <label class="upload-box" for="file-t2">
+                    <img class="upload-preview" id="preview-t2" alt="" style="display:none;">
+                    <span class="upload-placeholder">Haz clic para elegir la imagen</span>
+                </label>
+                <input type="file" id="file-t2" accept="image/*" hidden>
+                <p class="upload-error" id="error-t2"></p>
+            </div>
+
+        </div>
+
+        <div class="actions">
+            <button id="btn-upload-generate" class="btn-generate" disabled>
+                Generar predicción
+            </button>
+            <p id="upload-status" class="dice-result"></p>
+        </div>
+
+        <div class="panel" id="upload-result-panel" style="display:none;">
+            <h2>Predicción Modelo</h2>
+            <div class="box" id="box-output-upload">
+                <img id="img-pred-upload" class="pred-mask" alt="Máscara predicha">
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/upload.js') }}"></script>
+</body>
+</html>
